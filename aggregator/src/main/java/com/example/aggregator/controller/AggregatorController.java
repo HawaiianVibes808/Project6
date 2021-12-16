@@ -55,5 +55,10 @@ public class AggregatorController {
         return listOfWords;
     }
 
+    @GetMapping("/getAllPalindromes/{word}")
+    public List<Entry> getAllPalindromes(@PathVariable String word) {
+
+        return service.getAllPalindromes();
+    }
 
 }
